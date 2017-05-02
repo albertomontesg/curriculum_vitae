@@ -24,12 +24,12 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %-------------------------------------------------------------------------------
 
-\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage[scale=0.82]{geometry} % Reduce document margins
+\usepackage[scale=0.85]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -41,7 +41,7 @@
 \familyname{Montes} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Resume}
+\title{Resum\'e}
 \address{Kalchb\"uhlstrasse 94}{8038 Z\"urich, Switzerland}
 \phone[mobile]{+34~635~087~896}
 \email{al.montes.gomez@gmail.com}
@@ -49,7 +49,7 @@
 \social[github]{albertomontesg}
 
 
-\photo[70pt][0pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\photo[80pt][0pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %quote{"A witty and playful quotation" - John Smith}
 
 %-------------------------------------------------------------------------------
@@ -69,8 +69,8 @@
 \section{Education}
 
 \cventry{2016--Present}{Master in Computer Science}{Swiss Federal Institute of Technology (ETH)}{Z\"urich}{Specialization in Visual Computing}{}
-\cventry{2011--2016}{Bachelor in Science and Technology in Telecommunications}{Polytechnic University of Catalonia}{Barcelona}{\textit{GPA -- 9.0}}{}
-\cventry{2011--2016}{Bachelor of Engineering in Industrial Technologies}{Polytechnic University of Catalonia}{Barcelona}{\textit{GPA -- 8.7}}{}
+\cventry{2011--2016}{Bachelor in Science and Technology in Telecommunications}{Polytechnic University of Catalonia}{Barcelona}{\textit{GPA -- 9.0/10}}{}
+\cventry{2011--2016}{Bachelor of Engineering in Industrial Technologies}{Polytechnic University of Catalonia}{Barcelona}{\textit{GPA -- 8.7/10}}{}
 
 %-------------------------------------------------------------------------------
 %	RESEARCH EXPERIENCE SECTION
@@ -82,13 +82,12 @@
 
 \cvitem{Title}{\emph{Temporal Activity Detection in Untrimmed Videos with Recurrent Neural Networks}}
 \cvitem{Supervisors}{Professor Xavier Gir\'o-i-Nieto \& Doctorate Student Amaia Salvador}
-\cvitem{Description}{This thesis explores the use of Convolutional Neural Networks and Recurrent Neural Networks to classify activities in videos and temporally localize this activities. The work was presented at \emph{NIPS 2016 Workshop LSCVS} winning the \emph{Best Poster} award. \href{https://imatge-upc.github.io/activitynet-2016-cvprw/}{Project Link}}
+\cvitem{Description}{The thesis explores the use of Convolutional Neural Networks and Recurrent Neural Networks to classify activities in videos and temporally localize this activities. The work was presented at \emph{NIPS 2016 Workshop LSCVS} winning the \emph{Best Poster} award. \href{https://imatge-upc.github.io/activitynet-2016-cvprw/}{Project Link}}
 
-% \subsection{Publications}
 
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}
 
 
 %-------------------------------------------------------------------------------
@@ -111,11 +110,11 @@ Implement a GUI that simplifies provisioning, programming, and visualization of 
 %	COMPUTER SKILLS SECTION
 %-------------------------------------------------------------------------------
 
-\section{Computer skills}
+\section{Coding Skills}
 
-\cvitem{Advance}{\texttt{Python}, \texttt{Java}, \texttt{C}/\texttt{C++}, \texttt{Matlab}, \LaTeX}
+\cvitem{Advanced}{\texttt{Python}, \texttt{Java}, \texttt{C}/\texttt{C++}, \texttt{Matlab}, \LaTeX}
 \cvitem{Intermediate}{\texttt{R}, \texttt{JavaScript}, \texttt{SQL}}
-\cvitem{Experience}{NumPy, Scikit-learn, Matplotlib, Keras, TensorFlow, Theano, OpenCV, Django, AngularJS, Docker, nginx, UNIX/Linux, git}
+\cvitem{Experience}{NumPy, Scikit-learn, Matplotlib, Pandas, Keras, TensorFlow, Theano, OpenCV, Django, AngularJS, Docker, nginx, UNIX/Linux, git}
 
 
 %-------------------------------------------------------------------------------
@@ -124,10 +123,20 @@ Implement a GUI that simplifies provisioning, programming, and visualization of 
 
 \section{Languages}
 
-% \cvitemwithcomment{Catalan}{Mothertongue}{}
-\cvitemwithcomment{English}{Advance}{Fluent in comprehension, writing and speaking}
-\cvitemwithcomment{German}{Basic}{Basic words and phrases only}
-\cvitemwithcomment{Spanish \& Catalan}{Mothertongue}{}
+\cvitemwithcomment{Spanish}{Mothertongue}{}
+\cvitemwithcomment{Catalan}{Mothertongue}{}
+% \cvdoubleitem{Spanish}{Mothertongue}{Catalan}{Mothertongue}
+\cvitem{English}{
+\begin{tabular}{m{3.5cm} l}
+Advanced & \textit{Fluent in comprehension, writing and speaking}
+\end{tabular}
+}
+% \cvitemwithcomment{German}{Basic}{Basic words and phrases only}
+\cvitem{German}{
+\begin{tabular}{m{3.5cm} l}
+Basic & \textit{Basic words and phrases only}
+\end{tabular}
+}
 
 %-------------------------------------------------------------------------------
 
