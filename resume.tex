@@ -24,15 +24,12 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %-------------------------------------------------------------------------------
 
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{orange} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage{cite}
-
-
-\usepackage[scale=0.85]{geometry} % Reduce document margins
+\usepackage[scale=0.82]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -46,10 +43,10 @@
 % All information in this block is optional, comment out any lines you don't need
 \title{Resume}
 \address{Kalchb\"uhlstrasse 94}{8038 Z\"urich, Switzerland}
-% \mobile{+34~635~087~896}
-% \phone{}
-% \fax{}
+\phone[mobile]{+34~635~087~896}
 \email{al.montes.gomez@gmail.com}
+\social[linkedin]{albertomontesg}
+\social[github]{albertomontesg}
 
 
 \photo[70pt][0pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
@@ -88,10 +85,10 @@
 \cvitem{Description}{This thesis explores the use of Convolutional Neural Networks and Recurrent Neural Networks to classify activities in videos and temporally localize this activities. The work was presented at \emph{NIPS 2016 Workshop LSCVS} winning the \emph{Best Poster} award. \href{https://imatge-upc.github.io/activitynet-2016-cvprw/}{Project Link}}
 
 % \subsection{Publications}
-%
-% \nocite{*}
-% \bibliographystyle{plain}
-% \bibliography{publications}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}
 
 
 %-------------------------------------------------------------------------------

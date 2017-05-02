@@ -20,7 +20,7 @@ resume: $(RESUME_FILE)
 	if [ ! -d build ] ; then mkdir build ; fi;
 	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make -jobname=doc/$(RESUME_BUILD) $(RESUME_FILE)
 	# Clean build files
-	find ./doc -type f ! -name '$(RESUME_BUILD)' -delete
+	find ./doc -type f ! -name '$(RESUME_BUILD).pdf' -delete
 
 read: resume
 	# Only for macOS
